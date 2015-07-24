@@ -1,9 +1,0 @@
-{application,transactions,
-             [{description,[]},
-              {vsn,"1"},
-              {registered,[]},
-              {applications,[kernel,stdlib,jsx]},
-              {mod,{transactions,[]}},
-              {env,[]},
-              {modules,[cli,client,transaction,transactions,
-                        transactions_sup]}]}.

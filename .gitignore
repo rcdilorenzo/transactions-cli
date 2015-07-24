@@ -1,2 +1,4 @@
 transactions
 deps/
+ebin/
+.rebar/
