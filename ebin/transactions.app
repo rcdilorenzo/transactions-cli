@@ -2,7 +2,8 @@
              [{description,[]},
               {vsn,"1"},
               {registered,[]},
-              {applications,[kernel,stdlib]},
+              {applications,[kernel,stdlib,jsx]},
               {mod,{transactions,[]}},
               {env,[]},
-              {modules,[transactions,transactions_sup]}]}.
+              {modules,[cli,client,transaction,transactions,
+                        transactions_sup]}]}.

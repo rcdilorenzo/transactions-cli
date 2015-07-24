@@ -6,14 +6,12 @@
 -export([start/2, stop/1, main/1]).
 
 main([String]) ->
-    try
-        N = list_to_integer(String),
-        F = fac(N),
-        io:format("factorial ~w = ~w\n", [N,F])
-    catch
-        _:_ ->
-            usage()
+    inets:start(),
+    case String of
+        "list" -> client:list();
+        _ -> usage()
     end;
+
 main(_) ->
     usage().
 
