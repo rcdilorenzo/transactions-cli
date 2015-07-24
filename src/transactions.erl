@@ -16,11 +16,8 @@ main(_) ->
     usage().
 
 usage() ->
-    io:format("usage: factorial integer\n"),
+    io:format("usage: transactions <action>\n\tlist: print out all transactions\n"),
     halt(1).
-
-fac(0) -> 1;
-fac(N) -> N * fac(N-1).
 
 %% ===================================================================
 %% Application callbacks
