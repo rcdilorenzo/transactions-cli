@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -n "$1" ]; then
+  postgrest --db-host localhost --db-port 5432 --db-name transactions --db-pool 200 --anonymous $1 --port 3000 --db-user $1
+else
+  echo "usage: start <username>"
+fi
+
